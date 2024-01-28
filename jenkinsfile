@@ -1,0 +1,35 @@
+pipeline {
+agent any
+
+stages {
+stage('checkout'){
+
+}
+
+stage('build'){
+
+}
+
+stage('test'){
+
+}
+
+stage('scan'){
+
+}
+
+stage('artifactory'){
+
+}
+
+}
+}
+
+
+
+
+
+
+
+
+
