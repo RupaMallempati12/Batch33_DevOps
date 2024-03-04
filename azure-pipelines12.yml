@@ -6,16 +6,14 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  
-steps:
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'build'
-    arguments: '--configuration $(buildConfiguration)'
-  displayName: 'dotnet build $(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'publish'
-    arguments: '--configuration $(buildConfiguration)'
-  displayName: 'dotnet build $(buildConfiguration)'
+steps:
+- script: |
+    # Insert your build commands here
+    # Example: npm install (for Node.js), make (for Makefile-based projects), etc.
+  displayName: 'Build'
+
+- script: |
+    # Insert your publish commands here
+    # Example: npm publish (for Node.js), docker push (for Docker images), etc.
+  displayName: 'Publish'
