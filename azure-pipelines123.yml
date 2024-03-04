@@ -9,8 +9,8 @@ variables:
 
 steps:
 - script: |
-    find . -name '*.csproj'
-  displayName: 'Find Project Files'
+    ls -R
+  displayName: 'List All Files'
 
 - task: DotNetCoreCLI@2
   inputs:
